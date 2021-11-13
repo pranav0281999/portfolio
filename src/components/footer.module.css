@@ -1,0 +1,26 @@
+.footer-style {
+    width: 100%;
+    height: fit-content;
+    min-height: 100%;
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: footer;
+}
+
+.p-footer {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #828282;
+}
+
+.a-footer {
+    color: #828282;
+}

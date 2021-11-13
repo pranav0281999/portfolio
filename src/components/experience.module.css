@@ -1,0 +1,73 @@
+.div-experiences {
+    padding: 22px;
+    width: 100%;
+    background: white;
+    border-radius: 12px;
+    grid-area: experience;
+}
+
+.p-heading {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #4F4F4F;
+}
+
+.div-experiences-outer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 22px;
+}
+
+.div-experience {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.img-company-logo {
+    width: 84px;
+    height: 84px;
+    border-radius: 1000px;
+}
+
+.div-experience-details {
+    margin-left: 16px;
+}
+
+.p-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+    margin: 10px 0 20px 0;
+}
+
+.p-date-range {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+}
+
+.p-description {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
+}
+
+@media (max-width: 768px) {
+    .div-experiences-outer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

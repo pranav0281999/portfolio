@@ -1,0 +1,48 @@
+.div-main {
+    padding: 70px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 43px;
+    grid-column-gap: 43px;
+    grid-template-areas:
+        "profile profile profile"
+        "skills projects projects"
+        "experience projects projects"
+        "experience projects projects"
+        "hobbies hobbies footer";
+}
+
+@media (max-width: 1280px) {
+    .div-main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "profile profile"
+        "skills hobbies"
+        "experience hobbies"
+        "projects projects"
+        "footer footer";
+    }
+}
+
+
+@media (max-width: 960px) {
+    .div-main {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .div-main {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+        "profile"
+        "skills"
+        "experience"
+        "projects"
+        "hobbies"
+        "footer";
+    }
+}

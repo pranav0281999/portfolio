@@ -1,0 +1,110 @@
+.div-project {
+    padding: 22px;
+    max-height: 300px;
+    background: white;
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.img-project {
+    height: 100%;
+    border-radius: 12px;
+    max-height: 266px;
+}
+
+.div-project-details {
+    flex-grow: 1;
+    padding-left: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.p-tags {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #4F4F4F;
+}
+
+.p-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+}
+
+.p-about {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
+    margin-top: 15px;
+}
+
+.div-buttons {
+}
+
+.button-demo {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    padding: 11px 38px;
+    background: #2F80ED;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+}
+
+.button-code {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2F80ED;
+    padding: 11px 38px;
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #2F80ED;
+    outline: none;
+    margin-left: 11px;
+}
+
+@media (max-width: 768px) {
+    .div-project {
+        max-height: unset;
+        flex-direction: column;
+    }
+
+    .img-project {
+        height: unset;
+        width: 100%;
+        max-height: unset;
+    }
+
+    .div-project-details {
+        margin-top: 20px;
+    }
+
+    .p-title {
+        margin-top: 15px;
+    }
+
+    .div-buttons {
+        margin-top: 40px;
+    }
+}
