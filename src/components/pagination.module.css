@@ -28,6 +28,7 @@
 }
 
 .button-pagination-selected {
-    background: #2F80ED;
-    color: white;
+    background: #2F80ED !important;;
+    color: white !important;;
+    border: none !important;
 }

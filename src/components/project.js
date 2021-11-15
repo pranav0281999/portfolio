@@ -10,25 +10,33 @@ import {
   buttonCode,
   imgProject
 } from "./project.module.css";
-import projectImage from "../images/project.png";
 
-function Project(props) {
+function Project({project}) {
   return (
     <div className={divProject}>
-      <img src={projectImage} alt={"Project"} className={imgProject}/>
+      <img src={project.image} alt={"Project"} className={imgProject}/>
 
       <div className={divProjectDetails}>
-        <p className={pTags}>#HTML #CSS #responsive</p>
+        <p className={pTags}>{project.tags.map(tag => `#${tag.toLowerCase().replace(" ", "")} `)}</p>
         <div>
-          <p className={pTitle}>Recipe Blog</p>
-          <p className={pAbout}>
-            In this project, I work with HTML and CSS to create a responsive page. The design is from devchallenge.io.
-            Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.
-          </p>
+          <p className={pTitle}>{project.title}</p>
+          <p className={pAbout}>{project.description}</p>
         </div>
         <div className={divButtons}>
-          <button className={buttonDemo}>Demo</button>
-          <button className={buttonCode}>Code</button>
+          <a
+            className={buttonDemo}
+            href={project.demo}
+            target={"_blank"}
+          >
+            Demo
+          </a>
+          <a
+            className={buttonCode}
+            href={project.code}
+            target={"_blank"}
+          >
+            Code
+          </a>
         </div>
       </div>
     </div>
